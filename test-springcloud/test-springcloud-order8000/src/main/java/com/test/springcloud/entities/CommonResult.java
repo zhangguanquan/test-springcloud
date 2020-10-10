@@ -8,24 +8,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommonResult<T> {
-    private int code;
-     private String msg;
-     private T data;
-     
-     public CommonResult() {
- 		
- 	}
-
-     public CommonResult(int code, String msg) {
-         this.code = code;
-         this.msg = msg;
-     }
-     
-     public CommonResult(Integer code, String msg, Object o) {
-         this.code = code;
-         this.msg = msg;
-         this.data = (T) o;
-     }
+	private int code;
+	private String msg;
+	private T data;
+	  
+	public CommonResult() {
+		
+	}
+	
+    public CommonResult(int code, String msg) {
+	    this.code = code;
+	    this.msg = msg;
+    }
+    
+    public CommonResult(int code, String msg,Object o) {
+	    this.code = code;
+	    this.msg = msg;
+	    this.data = (T)o;
+    }
 
 	public int getCode() {
 		return code;
@@ -50,6 +50,5 @@ public class CommonResult<T> {
 	public void setData(T data) {
 		this.data = data;
 	}
-     
-     
+    
 }

@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Payment {
-    private Long id;
+	
+	private Long id;
     private String serial;
     
 	public Long getId() {
@@ -23,6 +24,5 @@ public class Payment {
 	public void setSerial(String serial) {
 		this.serial = serial;
 	}
-    
-    
+
 }
