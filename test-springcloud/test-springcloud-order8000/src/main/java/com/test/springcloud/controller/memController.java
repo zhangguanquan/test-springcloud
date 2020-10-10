@@ -20,6 +20,7 @@ public class memController {
 	@Autowired
 	private RestTemplate restTemplate;
 	
+	//public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 	public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 	
 	@RequestMapping("payment/get/{id}")
